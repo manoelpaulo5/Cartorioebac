@@ -119,7 +119,8 @@ int main()
 		printf("Escolha a opcao desejada no menu:\n\n");
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
-		printf("\t3 - Deletar nomes\n\n");
+		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: "); //fim do menu
 	
 		scanf("%d", &opcao); //coletando dados do usuario
@@ -140,33 +141,17 @@ int main()
 				deletar();
 			break;
 			
+			case 4:
+				printf("Obrigado por utilizar o sistema\n\n");
+				return 0;
+			break;
+			
 			default: 
 				printf("Essa opção não existe, retone ao menu inicial.\n\n");
 				system("pause");
 			break;
 			
 		}
-
-		//if (opcao == 1) //inicio das condicionais
-		//{ 
-		//	printf("Voce escolheu a opção de Registro de nomes\n\n");
-		//	system("pause");
-		//}
-		//if (opcao == 2)
-		//{
-		//	printf("voce escolheu a opção de consulta de nomes\n\n");
-		//	system("pause");
-		//}
-		//if (opcao == 3)
-		//{
-		//	printf("voce escolheu a opção de exclusão de cadastro\n\n");
-		//	system("pause");
-		//}
-		//if (opcao >= 4 || opcao <= 0) 
-		//{
-		//	printf("Essa opção não existe, retone ao menu inicial.\n\n");
-		//	system("pause");
-		//} //fim das condicionais
 	}
 }
 
